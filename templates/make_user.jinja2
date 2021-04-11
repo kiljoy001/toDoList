@@ -1,0 +1,12 @@
+{% extends "base.jinja2" %}
+
+{% block subtitle %}Create A User{% endblock subtitle %}
+
+{% block content %}
+<form method='POST'>
+    <!-- fill in task creation form here -->
+    <label for='user-name-input'>User Name:</label><input id='user-name-input' type='text' name='user-name'><br>
+    <label for='user-password'>User Password:</label><input id='user-password-input' type='password' name='user-password'>
+    <input type='submit' value='Create a User'>
+</form>
+{% endblock content %}
